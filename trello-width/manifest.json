@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Trello Width",
+  "version": "1.0",
+  "description": "Sets the trello card view full width",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.trello.com/**"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    }
+  }
+}

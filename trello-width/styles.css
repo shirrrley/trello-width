@@ -1,0 +1,7 @@
+[aria-labelledby="card-back-name"] {
+  width: calc(100vw - 96px) !important;
+}
+
+[aria-labelledby="card-back-name"] > div > div > div:last-child {
+  grid-template-columns: [main] 1fr [sidebar] 200px !important;
+}
